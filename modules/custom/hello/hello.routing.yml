@@ -1,0 +1,8 @@
+
+hello.hello_world_conroller_index:
+  path: '/hello/index/hello/{name}'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloWorldConroller::index'
+    _title: 'Hello world '
+  requirements:
+    _permission: 'access content'

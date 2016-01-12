@@ -1,0 +1,6 @@
+name: Unicef42
+type: module
+description: Module pour accèder aux souvenirs
+core: 8.x
+package: Other
+features: true

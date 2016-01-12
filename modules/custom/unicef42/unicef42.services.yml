@@ -1,0 +1,11 @@
+services:
+  unicef42.route_subscriber:
+    class: Drupal\unicef42\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  unicef42.temps_peri_controller_index:
+    class: Drupal\unicef42\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+

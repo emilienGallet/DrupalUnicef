@@ -1,0 +1,16 @@
+
+unicef42.unicef_controller_index:
+  path: '/unicef42/{name}'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\UnicefController::index'
+    _title: 'Unicef controller'
+  requirements:
+    _permission: 'access content'
+
+unicef42.temps_peri_controller_index:
+  path: '/temps-periscolaire/{name}'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\TempsPeriController::index'
+    _title: 'Temps periscolaire controller'
+  requirements:
+    _permission: 'access content'
