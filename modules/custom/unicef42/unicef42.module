@@ -21,7 +21,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 	    default:
 	    }
-	function unicef42_module_theme() {
+	function unicef42_theme() {
   		$theme['hello'] = [
     		'template' => 'hello',
     		'variables' => ['name' => NULL]
