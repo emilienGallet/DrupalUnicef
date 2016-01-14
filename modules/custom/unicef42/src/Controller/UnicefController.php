@@ -25,7 +25,7 @@ class UnicefController extends ControllerBase {
    * @return string
    *   Return Hello string.
    */
-  public function index($name) {
+  public function index() {
     /*
      * A en faire un lien ^^
      */
@@ -35,10 +35,10 @@ class UnicefController extends ControllerBase {
         '#type' => 'markup',
         '#markup' => $this->redirect('unicef42.temps_peri_controller_index',$arrayName = array('name' => $name))
     ];*/
-
+    $name = "test";
     return array(
-      '#theme' => 'hello_twig',
-      '#test_var' => $this->t('Test Value'),
+      '#theme' => 'hello',
+      '#name' => $name
     );
   }
 

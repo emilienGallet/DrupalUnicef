@@ -1,6 +1,6 @@
 
 unicef42.unicef_controller_index:
-  path: '/unicef42/{name}'
+  path: '/unicef42'
   defaults:
     _controller: '\Drupal\unicef42\Controller\UnicefController::index'
     _title: 'Unicef controller'

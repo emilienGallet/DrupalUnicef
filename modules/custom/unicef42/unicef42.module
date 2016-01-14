@@ -21,12 +21,12 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 	    default:
 	    }
-	function hello_twig_theme($existing, $type, $theme, $path) {
-  		return array(
-	    'hello' => array(
-	      'variables' => array('test_var' => NULL),
-	    	),
-	    );
+	function unicef42_module_theme() {
+  		$theme['hello'] = [
+    		'template' => 'hello',
+    		'variables' => ['name' => NULL]
+  		];
+  		return $theme;
 	}
 }
 
