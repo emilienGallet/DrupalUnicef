@@ -2,7 +2,7 @@
 unicef42.unicef_controller_index:
   path: '/unicef42'
   defaults:
-    _controller: '\Drupal\unicef42\Controller\UnicefController::index'
+    _controller: '\Drupal\unicef42\Controller\UnicefController::world'
     _title: 'Unicef controller'
   requirements:
     _permission: 'access content'
