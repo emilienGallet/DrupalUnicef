@@ -1,0 +1,5 @@
+name: hello_world
+type: module
+description: Un module de déminstration sur D8
+core: 8.x
+package: Other
