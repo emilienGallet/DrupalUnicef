@@ -7,10 +7,66 @@ unicef42.unicef_controller_index:
   requirements:
     _permission: 'access content'
 
+unicef42.pb_route_controller_index:
+  path: '/pbroute'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\PbRouteController::index'
+    _title: 'Pb route controller'
+  requirements:
+    _permission: 'access content'
+
+unicef42.act_solidaire_controller_index:
+  path: '/actions-solidaires'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\ActSolidaireController::index'
+    _title: 'Action solidaire'
+  requirements:
+    _permission: 'access content'
+
+unicef42.centre_sociaux_controller_index:
+  path: '/centres-sociaux'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\CentreSociauxController::index'
+    _title: 'Centre sociaux'
+  requirements:
+    _permission: 'access content'
+
+unicef42.club_jeunes_controller_index:
+  path: '/club-jeunes'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\ClubJeunesController::index'
+    _title: 'Club Jeunes'
+  requirements:
+    _permission: 'access content'
+
+unicef42.frimousse_controller_index:
+  path: '/frimousse'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\FrimousseController::index'
+    _title: 'Frimousse'
+  requirements:
+    _permission: 'access content'
+
+unicef42.fetes_controller_index:
+  path: '/fetes'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\FetesController::index'
+    _title: 'Fêtes'
+  requirements:
+    _permission: 'access content'
+
+unicef42.jeunes_ambasad_controller_index:
+  path: '/jeunes-ambasadeurs'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\JeunesAmbasadController::index'
+    _title: 'Jeunes ambassadeurs'
+  requirements:
+    _permission: 'access content'
+
 unicef42.temps_peri_controller_index:
-  path: '/temps-periscolaire/{name}'
+  path: '/temps-periscolaire'
   defaults:
     _controller: '\Drupal\unicef42\Controller\TempsPeriController::index'
-    _title: 'Temps periscolaire controller'
+    _title: 'Temps peri controller'
   requirements:
     _permission: 'access content'

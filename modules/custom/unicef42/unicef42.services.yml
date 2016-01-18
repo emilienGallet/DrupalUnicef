@@ -9,3 +9,7 @@ services:
     tags:
       - { name: event_subscriber }
 
+  unicef42.connection:
+    class: Drupal\unicef42\ConnectionService
+    arguments: []
+

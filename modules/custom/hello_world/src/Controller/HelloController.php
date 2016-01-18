@@ -22,9 +22,12 @@ class HelloController extends ControllerBase {
    *   Return Hello string.
    */
   public function world() {
+
+
+
     return [
-        '#theme' => 'world',
-        '#markup' => $this->t('Hello world ! ')
+        '#type' => 'markup',
+        '#markup' => drupal_get_path('module','hello_world').'/templates/world.html.twig'
     ];
   }
 
