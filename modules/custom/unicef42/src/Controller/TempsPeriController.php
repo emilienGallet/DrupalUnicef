@@ -24,7 +24,7 @@ class TempsPeriController extends ControllerBase {
   public function index() {
     return [
         '#type' => 'markup',
-        '#markup' => $this->t("Implement method: index with parameter(s): ")
+        '#markup' => $this->t("Implement method: index with parameter(s): Temps périscolaire")
     ];
   }
 

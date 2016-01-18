@@ -67,6 +67,14 @@ unicef42.temps_peri_controller_index:
   path: '/temps-periscolaire'
   defaults:
     _controller: '\Drupal\unicef42\Controller\TempsPeriController::index'
-    _title: 'Temps peri controller'
+    _title: 'Temps périscolaire'
+  requirements:
+    _permission: 'access content'
+
+unicef42.ecoles_controller_index:
+  path: '/ecoles'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\EcolesController::index'
+    _title: 'Ecoles'
   requirements:
     _permission: 'access content'
