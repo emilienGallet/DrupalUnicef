@@ -217,7 +217,14 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases['default']['default'] = array(
+     'driver' => 'mysql',
+     'database' => 'moduleunicef',
+     'username' => 'root',
+     'password' => 'root',
+     'host' => 'localhost',
+     'prefix' => '',
+   );
 
 /**
  * Location of the site configuration files.

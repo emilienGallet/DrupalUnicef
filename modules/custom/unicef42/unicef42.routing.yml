@@ -78,3 +78,45 @@ unicef42.ecoles_controller_index:
     _title: 'Ecoles'
   requirements:
     _permission: 'access content'
+
+# DefaultEntity routing definition
+entity.default_entity.collection:
+  path: '/admin/structure/default_entity'
+  defaults:
+    _entity_list: 'default_entity'
+    _title: 'Default entity'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.default_entity.add_form:
+  path: '/admin/structure/default_entity/add'
+  defaults:
+    _entity_form: 'default_entity.add'
+    _title: 'Add Default entity'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.default_entity.edit_form:
+  path: '/admin/structure/default_entity/{default_entity}'
+  defaults:
+    _entity_form: 'default_entity.edit'
+    _title: 'Edit Default entity'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.default_entity.delete_form:
+  path: '/admin/structure/default_entity/{default_entity}/delete'
+  defaults:
+    _entity_form: 'default_entity.delete'
+    _title: 'Delete Default entity'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
