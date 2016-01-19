@@ -22,10 +22,10 @@ class CentreSociauxController extends ControllerBase {
    *   Return Hello string.
    */
   public function index() {
-    return [
-        '#type' => 'markup',
-        '#markup' => $this->t("Implement method: index with parameter(s): centreSociaux")
-    ];
+    return array(
+            '#theme' => 'world',
+            '#texte' => $this->t('CentreSociaux'),
+        );
   }
 
 }
