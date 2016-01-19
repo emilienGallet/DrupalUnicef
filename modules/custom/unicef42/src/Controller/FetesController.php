@@ -22,10 +22,10 @@ class FetesController extends ControllerBase {
    *   Return Hello string.
    */
   public function index() {
-    return [
-        '#type' => 'markup',
-        '#markup' => $this->t("Implement method: index with parameter(s): Fêtes")
-    ];
+    return array(
+            '#theme' => 'world',
+            '#texte' => $this->t('Fêtes'),
+        );
   }
 
 }

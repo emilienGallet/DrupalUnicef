@@ -22,10 +22,10 @@ class JeunesAmbasadController extends ControllerBase {
    *   Return Hello string.
    */
   public function index() {
-    return [
-        '#type' => 'markup',
-        '#markup' => $this->t("Implement method: index with parameter(s): JEunes Ambassadeurs")
-    ];
+    return array(
+            '#theme' => 'world',
+            '#texte' => $this->t('Jeunes Ambasadeurs'),
+        );
   }
 
 }
