@@ -11,4 +11,5 @@ services:
 
   unicef42.connection:
     class: Drupal\unicef42\ConnectionService
+    arguments: []
 
