@@ -19,7 +19,7 @@ unicef42.act_solidaire_controller_index:
   path: '/actions-solidaires'
   defaults:
     _controller: '\Drupal\unicef42\Controller\ActSolidaireController::index'
-    _title: 'Action solidaire'
+    _title: 'Actions solidaires'
   requirements:
     _permission: 'access content'
 
@@ -32,18 +32,18 @@ unicef42.centre_sociaux_controller_index:
     _permission: 'access content'
 
 unicef42.club_jeunes_controller_index:
-  path: '/club-jeunes'
+  path: '/clubs-jeunes'
   defaults:
     _controller: '\Drupal\unicef42\Controller\ClubJeunesController::index'
-    _title: 'Club Jeunes'
+    _title: 'Clubs Jeunes'
   requirements:
     _permission: 'access content'
 
 unicef42.frimousse_controller_index:
-  path: '/frimousse'
+  path: '/frimousses'
   defaults:
     _controller: '\Drupal\unicef42\Controller\FrimousseController::index'
-    _title: 'Frimousse'
+    _title: 'Frimousses'
   requirements:
     _permission: 'access content'
 
@@ -64,10 +64,10 @@ unicef42.jeunes_ambasad_controller_index:
     _permission: 'access content'
 
 unicef42.temps_peri_controller_index:
-  path: '/temps-periscolaire'
+  path: '/temps-periscolaires'
   defaults:
     _controller: '\Drupal\unicef42\Controller\TempsPeriController::index'
-    _title: 'Temps périscolaire'
+    _title: 'Temps périscolaires'
   requirements:
     _permission: 'access content'
 
@@ -76,5 +76,38 @@ unicef42.ecoles_controller_index:
   defaults:
     _controller: '\Drupal\unicef42\Controller\EcolesController::index'
     _title: 'Ecoles'
+  requirements:
+    _permission: 'access content'
+
+
+unicef42.droits_dans_l_ecole_controller_index:
+  path: '/droits-dans-l-ecole'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\DroitsDansLEcoleController::index'
+    _title: 'Droits dans l`École'
+  requirements:
+    _permission: 'access content'
+
+unicef42.manif_sportive_controller_index:
+  path: '/manif-sportive'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\ManifSportiveController::index'
+    _title: 'Manifestations sportives'
+  requirements:
+    _permission: 'access content'
+
+unicef42.festivals_controller_index:
+  path: '/festivals'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\FestivalsController::index'
+    _title: 'Festivals'
+  requirements:
+    _permission: 'access content'
+
+unicef42.accueil_controller_index:
+  path: '/accueil'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\AccueilController::index'
+    _title: 'Accueil'
   requirements:
     _permission: 'access content'

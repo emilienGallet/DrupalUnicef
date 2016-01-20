@@ -30,6 +30,55 @@ function unicef42_theme() {
             'template' => 'world',
             'variables' => array('texte' => NULL)
         ),
+        'fetes' => array(
+            'template' => 'fetes',
+            'variables' => array('texte' => NULL)
+        ),
+        'temps-periscolaire' => array(
+            'template' => 'temps-periscolaire',
+            'variables' => array('texte' => NULL)
+        ),
+        'jeunes-ambasadeurs' => array(
+            'template' => 'jeunes-ambasadeurs',
+            'variables' => array('texte' => NULL)
+        ),
+        'frimousses' => array(
+            'template' => 'frimousses',
+            'variables' => array('texte' => NULL)
+        ),
+        'ecoles' => array(
+            'template' => 'ecoles',
+            'variables' => array('texte' => NULL)
+        ),
+        'clubs-jeunes' => array(
+            'template' => 'clubs-jeunes',
+            'variables' => array('texte' => NULL)
+        ),
+        'centres-sociaux' => array(
+            'template' => 'centres-sociaux',
+            'variables' => array('texte' => NULL)
+        ),
+        'actions-solidaires' => array(
+            'template' => 'actions-solidaires',
+            'variables' => array('texte' => NULL)
+        ),
+        'droits-dans-l-ecole' => array(
+            'template' => 'droits-dans-l-ecole',
+            'variables' => array('texte' => NULL)
+        ),
+        'manif-sportive' => array(
+            'template' => 'manif-sportive',
+            'variables' => array('texte' => NULL)
+        ),
+        'festivals' => array(
+            'template' => 'festivals',
+            'variables' => array('texte' => NULL)
+        ),
+        'accueil' => array(
+            'template' => 'accueil',
+            'variables' => array('texte' => NULL)
+        ),
+
     );
 	}
 

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\unicef42\Controller\FetesController.
+ * Contains \Drupal\unicef42\Controller\FestivalsController.
  */
 
 namespace Drupal\unicef42\Controller;
@@ -10,11 +10,11 @@ namespace Drupal\unicef42\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Class FetesController.
+ * Class FestivalsController.
  *
  * @package Drupal\unicef42\Controller
  */
-class FetesController extends ControllerBase {
+class FestivalsController extends ControllerBase {
   /**
    * Index.
    *
@@ -23,8 +23,8 @@ class FetesController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'fetes',
-            '#texte' => $this->t('Fêtes'),
+            '#theme' => 'world',
+            '#texte' => $this->t('Festivals'),
         );
   }
 
