@@ -15,6 +15,14 @@ unicef42.pb_route_controller_index:
   requirements:
     _permission: 'access content'
 
+unicef42.pb_route_controller_autre:
+  path: '/pbrouteautre'
+  defaults:
+    _controller: '\Drupal\unicef42\Controller\PbRouteController::autre'
+    _title: 'Pb route controller'
+  requirements:
+    _permission: 'access content'
+
 unicef42.act_solidaire_controller_index:
   path: '/actions-solidaires'
   defaults:
@@ -108,6 +116,6 @@ unicef42.accueil_controller_index:
   path: '/accueil'
   defaults:
     _controller: '\Drupal\unicef42\Controller\AccueilController::index'
-    _title: 'Accueil'
+    _title: ''
   requirements:
     _permission: 'access content'

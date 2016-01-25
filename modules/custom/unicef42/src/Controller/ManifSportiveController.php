@@ -23,7 +23,7 @@ class ManifSportiveController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
+            '#theme' => 'manif-sportive',
             '#texte' => $this->t('Manifestations sportive'),
         );
   }

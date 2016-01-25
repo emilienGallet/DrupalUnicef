@@ -27,19 +27,23 @@ class PbRouteController extends ControllerBase {
     //$laBdd = $service->__construct('localhost','moduleunicef','root','root');
 
     //$laBdd = new Bdd("localhost","moduleunicef","root","root");
-    $laBdd = $service->connection();
+    $laRequette = $service->annee();
     //$result = $connection->query("SELECT * FROM node")->fetchAll();
-
-    if ($laBdd == TRUE) {
-      return [
-        '#type' => 'markup',
-        '#markup' => $this->t("Connecter")
-        ];
+    $donnees = $laRequette->fetch();
+    foreach ($donnees as $key => $values) {
+      return array(
+              '#theme' => 'pbroute',
+              '#donnees' => $donnees,
+              '#key' => $key,
+              '#values' => $values,
+          );
     }
-    return [
-        '#type' => 'markup',
-        '#markup' => $this->t("Implement method: index with parameter(s):test ok?")
-    ];
+  }
+  public function autre() {
+    return array(
+            '#theme' => 'world',
+            '#values' => $this->t('Temps periscolaire'),
+        );
   }
 
 }

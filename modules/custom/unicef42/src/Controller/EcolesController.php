@@ -23,7 +23,7 @@ class EcolesController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
+            '#theme' => 'ecoles',
             '#texte' => $this->t('Écoles'),
         );
   }

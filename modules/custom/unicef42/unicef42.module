@@ -9,6 +9,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_help().
+ * /site/admin/help/unicef42
  */
 	function unicef42_help($route_name, RouteMatchInterface $route_match) {
 	  	switch ($route_name) {
@@ -28,7 +29,15 @@ function unicef42_theme() {
   		return array(
         'world' => array(
             'template' => 'world',
-            'variables' => array('texte' => NULL)
+            'variables' => array('values' => NULL)
+        ),
+        'pbroute' => array(
+            'template' => 'pbroute',
+            'variables' => array(
+                'values' => NULL,
+                'donnees' => NULL,
+                'key' => NULL
+                )
         ),
         'fetes' => array(
             'template' => 'fetes',

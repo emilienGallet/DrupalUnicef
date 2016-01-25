@@ -23,7 +23,7 @@ class DroitsDansLEcoleController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
+            '#theme' => 'droits-dans-l-ecole',
             '#texte' => $this->t('Droits dans l`école'),
         );
   }

@@ -40,19 +40,16 @@ class ConnectionService implements ConnectionServiceInterface {
 	    }
 	/* La méthode connection, comme elle est aussi implicite, permet de se connecter a la base de donnée */
 	public function connection(){
-		try
-		{
-			$bdd = new PDO('mysql:host='.$this->host.';dbname='.$this->name.';charset=utf8', $this->login , $this->mdp);
-			return "ok";
-		}
-		catch (Exception $e)
-		{
-		        die('Erreur : ' . $e->getMessage());
-		        return "pas ok";
-		}
+
+		$bdd = new PDO('mysql:host='.$this->host.';dbname='.$this->name.';charset=utf8', $this->login , $this->mdp);
+		return $bdd;
 	}
-	/**
-	 * Les autres méthodes SQL. 
-	 */
+	public function annee(){
+
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query("SELECT * FROM `AnneeCivil`");
+		return $reponse;
+
+	}
 
 }

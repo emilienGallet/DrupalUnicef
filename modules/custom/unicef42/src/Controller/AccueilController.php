@@ -23,8 +23,7 @@ class AccueilController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
-            '#texte' => $this->t('Jeunes Ambasadeurs'),
+            '#theme' => 'accueil',
         );
   }
 

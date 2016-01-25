@@ -23,7 +23,7 @@ class JeunesAmbasadController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
+            '#theme' => 'jeunes-ambasadeurs',
             '#texte' => $this->t('Jeunes Ambasadeurs'),
         );
   }

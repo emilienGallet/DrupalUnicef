@@ -23,7 +23,7 @@ class FestivalsController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
+            '#theme' => 'festivals',
             '#texte' => $this->t('Festivals'),
         );
   }

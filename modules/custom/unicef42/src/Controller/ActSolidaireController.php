@@ -23,7 +23,7 @@ class ActSolidaireController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
+            '#theme' => 'actions-solidaires',
             '#texte' => $this->t('ActionSolidaire'),
         );
   }

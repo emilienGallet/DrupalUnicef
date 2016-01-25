@@ -10,6 +10,8 @@
 
 use Drupal\Core\DrupalKernel;
 use Symfony\Component\HttpFoundation\Request;
+/*Debugger*/
+error_reporting(E_ALL); ini_set('display_errors', TRUE); ini_set('display_startup_errors', TRUE);
 
 $autoloader = require_once 'autoload.php';
 
