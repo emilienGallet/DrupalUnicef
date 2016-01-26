@@ -24,9 +24,6 @@ class PbRouteController extends ControllerBase {
   public function index() {
     
     $service = \Drupal::service('unicef42.connection');
-    //$laBdd = $service->__construct('localhost','moduleunicef','root','root');
-
-    //$laBdd = new Bdd("localhost","moduleunicef","root","root");
     $laRequette = $service->annee();
     //$result = $connection->query("SELECT * FROM node")->fetchAll();
     $donnees = $laRequette->fetch();
