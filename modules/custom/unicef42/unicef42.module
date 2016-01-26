@@ -35,8 +35,6 @@ function unicef42_theme() {
             'template' => 'pbroute',
             'variables' => array(
                 'values' => NULL,
-                'donnees' => NULL,
-                'key' => NULL
                 )
         ),
         'fetes' => array(
