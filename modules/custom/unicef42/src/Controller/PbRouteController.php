@@ -30,14 +30,11 @@ class PbRouteController extends ControllerBase {
     $laRequette = $service->annee();
     //$result = $connection->query("SELECT * FROM node")->fetchAll();
     $donnees = $laRequette->fetch();
-    foreach ($donnees as $key => $values) {
-      return array(
+    
+    return array(
               '#theme' => 'pbroute',
-              '#donnees' => $donnees,
-              '#key' => $key,
-              '#values' => $values,
+              '#values' => $donnees['Annee'],
           );
-    }
   }
   public function autre() {
     return array(
