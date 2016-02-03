@@ -24,7 +24,6 @@ class CentreSociauxController extends ControllerBase {
   public function index() {
     return array(
             '#theme' => 'centres-sociaux',
-            '#texte' => $this->t('CentreSociaux'),
         );
   }
 

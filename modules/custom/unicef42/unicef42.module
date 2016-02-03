@@ -34,7 +34,13 @@ function unicef42_theme() {
         'pbroute' => array(
             'template' => 'pbroute',
             'variables' => array(
-                'values' => NULL,
+                'liste' => NULL,
+                )
+        ),
+        'pbrouteautre' => array(
+            'template' => 'pbrouteautre',
+            'variables' => array(
+                'liste' => NULL,
                 )
         ),
         'fetes' => array(
@@ -67,19 +73,23 @@ function unicef42_theme() {
         ),
         'actions-solidaires' => array(
             'template' => 'actions-solidaires',
-            'variables' => array('texte' => NULL)
+            'variables' => array(
+                'liste' => NULL,
+                )
         ),
         'droits-dans-l-ecole' => array(
             'template' => 'droits-dans-l-ecole',
             'variables' => array('texte' => NULL)
         ),
-        'manif-sportive' => array(
-            'template' => 'manif-sportive',
-            'variables' => array('texte' => NULL)
-        ),
         'festivals' => array(
             'template' => 'festivals',
             'variables' => array('texte' => NULL)
+        ),
+        'manifsportive' => array(
+            'template' => 'manif-sportive',
+            'variables' => array(
+                'sports' => NULL
+                )
         ),
         'accueil' => array(
             'template' => 'accueil',

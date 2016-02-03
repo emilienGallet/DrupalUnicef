@@ -24,23 +24,23 @@ class PbRouteController extends ControllerBase {
   public function index() {
     
     $service = \Drupal::service('unicef42.connection');
-    $laRequette = $service->annee();
+    $listeAnnee = $service->annee();
     //$result = $connection->query("SELECT * FROM node")->fetchAll();
-    $donnees = $laRequette->fetch();
-    $lignes = array();
-    $lignes[0]['Annee'] = $donnees['Annee']; //2014
-    $donnees = $laRequette->fetch();
-    $lignes[1]['Annee'] = $donnees['Annee']; //2015
-    print_r($lignes);
+
+    
     return array(
               '#theme' => 'pbroute',
-              '#values' => $lignes[0]['Annee'],
+              '#liste' => $listeAnnee,
           );
   }
   public function autre() {
+    $service = \Drupal::service('unicef42.connection');
+    $parametre = 'nom';
+    $liste = $service->listetestActionSolidaire($parametre);
+    print_r($liste);
     return array(
-            '#theme' => 'world',
-            '#values' => $this->t('Temps periscolaire'),
+            '#theme' => 'pbrouteautre',
+            '#liste' => $liste,
         );
   }
 

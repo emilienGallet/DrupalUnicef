@@ -1,0 +1,7 @@
+{# src : ImgManifSportiveController #}
+<h1>{{lamanif}}</h1>
+<ul>
+	{% for imgmanifsportive in liste %}
+		<li><a href=" {{ imgmanifsportive.refLien }} "><img src="{{imgmanifsportive.refLien}}"/></a></li><br />
+	{% endfor %}
+</ul>

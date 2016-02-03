@@ -44,6 +44,7 @@ class ConnectionService implements ConnectionServiceInterface {
 		$bdd = new PDO('mysql:host='.$this->host.';dbname='.$this->name.';charset=utf8', $this->login , $this->mdp);
 		return $bdd;
 	}
+	/*Requette non préparé*/
 	public function annee(){
 
 		$laBdd = $this->connection();
@@ -51,5 +52,50 @@ class ConnectionService implements ConnectionServiceInterface {
 		return $reponse;
 
 	}
+	/*Passage avec un parametre pour faire une requette préparé*/
+	public function listetestActionSolidaire($parametre){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT '.$parametre.' FROM `ActionsSolidaires`');
+		return $reponse;
+
+	}
+	public function listeActionSolidaire(){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT nom FROM `ActionsSolidaires`');
+		return $reponse;
+
+	}
+	public function listeSport(){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT nomSport FROM Sport');
+		return $reponse;
+
+	}
+	public function listeManifSport($lesport){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT NomManifSportive FROM ManifSportif, Sport WHERE Sport_idSport = idSport AND nomSport = "'.$lesport.'";');
+		return $reponse;
+
+	}
+	public function listeImgManifSport($laManif){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT refLien,commentaire FROM Images,ManifSportif WHERE idManifSportif=ManifSportif_idManifSportif AND NomManifSportive = "'.$laManif.'"');
+		return $reponse;
+
+	}
+	public function listeAnneeActionsSolidaires($lactionSolidaire){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT AnneeCivil_Annee FROM Images, ActionsSolidaires WHERE idActionsSolidaires = ActionsSolidaires_idActionsSolidaires
+		AND nom = "'.$lactionSolidaire.'" GROUP BY AnneeCivil_Annee');
+		return $reponse;
+
+	}
+
 
 }

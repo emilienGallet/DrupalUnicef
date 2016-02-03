@@ -24,7 +24,6 @@ class JeunesAmbasadController extends ControllerBase {
   public function index() {
     return array(
             '#theme' => 'jeunes-ambasadeurs',
-            '#texte' => $this->t('Jeunes Ambasadeurs'),
         );
   }
 

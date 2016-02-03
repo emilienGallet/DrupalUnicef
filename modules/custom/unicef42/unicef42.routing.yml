@@ -35,7 +35,7 @@ unicef42.centre_sociaux_controller_index:
   path: '/centres-sociaux'
   defaults:
     _controller: '\Drupal\unicef42\Controller\CentreSociauxController::index'
-    _title: 'Centre sociaux'
+    _title: 'Centres sociaux'
   requirements:
     _permission: 'access content'
 

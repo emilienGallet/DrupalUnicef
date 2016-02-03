@@ -1,0 +1,6 @@
+services:
+  u42p2.route_subscriber:
+    class: Drupal\u42p2\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+

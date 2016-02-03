@@ -22,10 +22,16 @@ class ManifSportiveController extends ControllerBase {
    *   Return Hello string.
    */
   public function index() {
+    $service = \Drupal::service('unicef42.connection');
+    $listeSport = $service->listeSport();
+
+    //$result = $connection->query("SELECT * FROM node")->fetchAll();
+
+    print_r($listeSport);
     return array(
-            '#theme' => 'manif-sportive',
-            '#texte' => $this->t('Manifestations sportive'),
-        );
+              '#theme' => 'manifsportive',
+              '#sports' => $listeSport,
+          );  
   }
 
 }

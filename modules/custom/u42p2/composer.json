@@ -1,0 +1,16 @@
+{
+  "name": "drupal/u42p2",
+  "type": "drupal-module",
+  "description": "Partie 2 du module unicef",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/u42p2",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/u42p2",
+    "source": "http://cgit.drupalcode.org/u42p2"
+  },
+  "require": {
+    "twig/extensions": "~1.0"
+  }
+}

@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Contains u42p2.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function u42p2_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the u42p2 module.
+    case 'help.page.u42p2':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Partie 2 du module unicef') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+function u42p2_theme() {
+  		return array(
+        'test' => array(
+            'template' => 'test',
+            'variables' => array(
+            	'liste' => NULL
+            	)
+        ),
+        'manifsport-sport' => array(
+            'template' => 'manifsport-sport',
+            'variables' => array(
+              'liste' => NULL,
+              'sport' => NULL
+              )
+        ),
+        'manifsport-images' => array(
+            'template' => 'manifsport-images',
+            'variables' => array(
+              'liste' => NULL,
+              'lamanif' => NULL
+              )
+        ),
+        'actions-solidaires-annee' => array(
+            'template' => 'actions-solidaires-annee',
+            'variables' => array(
+              'liste' => NULL,
+              'actionSolidaire' => NULL
+              )
+        ),
+
+    );
+	}
+

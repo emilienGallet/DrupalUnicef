@@ -1,0 +1,5 @@
+name: u42p2
+type: module
+description: Partie 2 du module unicef
+core: 8.x
+package: Other

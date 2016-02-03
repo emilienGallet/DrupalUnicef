@@ -24,7 +24,6 @@ class ClubJeunesController extends ControllerBase {
   public function index() {
     return array(
             '#theme' => 'clubs-jeunes',
-            '#texte' => $this->t('ClubJeunes'),
         );
   }
 

@@ -1,0 +1,32 @@
+
+u42p2.manif_sportive_index:
+  path: '/manif-sportive/{sport}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\ManifSportive::index'
+    _title: 'Manifestation sportive'
+  requirements:
+    _permission: 'access content'
+
+u42p2.default_controller_index:
+  path: '/u42p2/index/hello/{name}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\DefaultController::index'
+    _title: 'Default controller'
+  requirements:
+    _permission: 'access content'
+
+u42p2.img_manif_sportive_controller_index:
+  path: '/manif-sportive/{sport}/{lamanif}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\ImgManifSportiveController::index'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+
+u42p2.annees_actions_solidaires_index:
+  path: '/actions-solidaires/{actionSolidaire}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\AnneesActionsSolidaires::index'
+    _title: 'Annees actions solidaires'
+  requirements:
+    _permission: 'access content'

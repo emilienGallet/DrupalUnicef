@@ -23,8 +23,7 @@ class TempsPeriController extends ControllerBase {
    */
   public function index() {
     return array(
-            '#theme' => 'world',
-            '#texte' => $this->t('Temps periscolaire'),
+            '#theme' => 'temps-periscolaire',
         );
   }
 

@@ -24,7 +24,6 @@ class FrimousseController extends ControllerBase {
   public function index() {
     return array(
             '#theme' => 'frimousses',
-            '#texte' => $this->t('Frimousses'),
         );
   }
 

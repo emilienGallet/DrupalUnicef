@@ -22,9 +22,11 @@ class ActSolidaireController extends ControllerBase {
    *   Return Hello string.
    */
   public function index() {
+    $service = \Drupal::service('unicef42.connection');
+    $liste = $service->listeActionSolidaire();
     return array(
             '#theme' => 'actions-solidaires',
-            '#texte' => $this->t('ActionSolidaire'),
+            '#liste' => $liste,
         );
   }
 
