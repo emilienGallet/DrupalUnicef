@@ -51,6 +51,13 @@ function u42p2_theme() {
               'actionSolidaire' => NULL
               )
         ),
+        'actions-solidaires-images' => array(
+            'template' => 'actions-solidaires-images',
+            'variables' => array(
+              'liste' => NULL,
+              'actionSolidaire' => NULL
+              )
+        ),
 
     );
 	}

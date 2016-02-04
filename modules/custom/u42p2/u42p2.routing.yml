@@ -30,3 +30,11 @@ u42p2.annees_actions_solidaires_index:
     _title: 'Annees actions solidaires'
   requirements:
     _permission: 'access content'
+
+u42p2.img_actions_solidaires_controller_index:
+  path: '/actions-solidaire/{actionSolidaire}/{annee}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\ImgActionsSolidairesController::index'
+    _title: 'Img actions solidaires controller'
+  requirements:
+    _permission: 'access content'
