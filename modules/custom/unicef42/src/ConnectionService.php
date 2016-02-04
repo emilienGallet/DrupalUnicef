@@ -103,6 +103,13 @@ class ConnectionService implements ConnectionServiceInterface {
 		return $reponse;
 
 	}
+	public function listeSecteur(){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT * FROM Secteurs');
+		return $reponse;
+
+	}
 
 
 }

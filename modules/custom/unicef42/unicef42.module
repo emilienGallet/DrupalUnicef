@@ -69,7 +69,9 @@ function unicef42_theme() {
         ),
         'centres-sociaux' => array(
             'template' => 'centres-sociaux',
-            'variables' => array('texte' => NULL)
+            'variables' => array(
+                'liste' => NULL
+                )
         ),
         'actions-solidaires' => array(
             'template' => 'actions-solidaires',
