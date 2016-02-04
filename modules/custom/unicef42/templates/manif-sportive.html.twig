@@ -1,0 +1,5 @@
+<ul>
+	{% for sport in sports %}
+		<li><a href=" {{ path('u42p2.manif_sportive_index', {'sport': sport.nomSport} ) }} ">{{sport.nomSport}}<br /></a></li>
+	{% endfor %} 
+</ul>

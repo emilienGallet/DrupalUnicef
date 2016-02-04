@@ -1,11 +1,11 @@
-<h1>{{secteur}}</h1>
+<h1>{{ nom }}</h1>
 <ul>
 	{% for lecentre in liste %}
 		<li>
-			<a href="{#
+			<a href="
 			{{
 				path('u42p2.annee_centres_sociaux_controller_index', {'secteur' : secteur ,'nom' : lecentre.AnneeCivil_Annee })
 			}}
-			#}">{{lecentre.AnneeCivil_Annee}}</a></li><br />
+			">{{lecentre.AnneeCivil_Annee}}</a></li><br />
 	{% endfor %}
 </ul>

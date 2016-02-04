@@ -28,7 +28,7 @@ class AnneeCentresSociauxController extends ControllerBase {
     return array(
               '#theme' => 'centres-sociaux-annee',
               '#liste' => $liste,
-              '#nom' => $nom,
+              '#nom' => $nom
           );
   }
 

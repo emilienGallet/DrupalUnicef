@@ -1,11 +1,10 @@
 <ul>
-	<li>Saint-Chamond</li>
-	<li>Gier</li>
-	<li>Saint-Etienne</li>
-	<li>Région Stéphanoise</li>
-	<li>Roanne</li>
-	<li>Roannais</li>
-	<li>Montbrison</li>
-	<li>Forez</li>
-	<li>Ondaine</li>
+	{% for leSecteur in liste %}
+		<li>
+		<a href="{#
+			{{ 
+				path('u42p2.liste_centres_sociaux_controller_index', {'secteur': leSecteur.nomSecteur }) 
+			}}#}
+		">{{leSecteur.nomSecteur}}<br /></a></li>
+	{% endfor %}
 </ul>

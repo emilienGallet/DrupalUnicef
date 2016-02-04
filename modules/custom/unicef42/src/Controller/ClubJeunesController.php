@@ -22,9 +22,13 @@ class ClubJeunesController extends ControllerBase {
    *   Return Hello string.
    */
   public function index() {
+    $service = \Drupal::service('unicef42.connection');
+    $liste = $service->listeSecteur();
     return array(
             '#theme' => 'clubs-jeunes',
+            '#liste' => $liste,
         );
+
   }
 
 }

@@ -65,7 +65,9 @@ function unicef42_theme() {
         ),
         'clubs-jeunes' => array(
             'template' => 'clubs-jeunes',
-            'variables' => array('texte' => NULL)
+            'variables' => array(
+                'liste' => NULL
+                )
         ),
         'centres-sociaux' => array(
             'template' => 'centres-sociaux',
