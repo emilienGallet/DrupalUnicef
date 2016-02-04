@@ -1,0 +1,7 @@
+{# src : ImgActionsSolidairesController #}
+<h1>{{actionSolidaire}}</h1>
+<ul>
+	{% for imgactionssolidaires in liste %}
+		<li><a href=" {{ imgactionssolidaires.refLien }} "><img src="{{imgactionssolidaires.refLien}}"/></a></li><br />
+	{% endfor %}
+</ul>
