@@ -96,6 +96,13 @@ class ConnectionService implements ConnectionServiceInterface {
 		return $reponse;
 
 	}
+	public function listeImagesActionsSolidaires($lactionSolidaire, $lannee){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT refLien,commentaire FROM Images, ActionsSolidaires WHERE ActionsSolidaires_idActionsSolidaires = idActionsSolidaires AND nom = "'.$lactionSolidaire.'" AND AnneeCivil_Annee = "'.$lannee.'" ');
+		return $reponse;
+
+	}
 
 
 }

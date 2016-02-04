@@ -1,8 +1,0 @@
-{#  src : AnneeActionSolidaire #}
-{{actionSolidaire}}
-
-<ul>
-	{% for ActionSolidaire in liste %}
-		<li><a href="{# {{ path('u42p2.img_manif_sportive_controller_index', {'sport': sport, 'lamanif': ActionSolidaire.NomManifSportive} ) }}  #}">{{ActionSolidaire.NomManifSportive}}<br /></a></li>
-	{% endfor %}
-</ul>

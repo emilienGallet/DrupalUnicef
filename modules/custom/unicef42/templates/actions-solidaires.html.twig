@@ -1,6 +1,8 @@
 <ul>
 	{% for actionsSolidaires in liste %}
-		<li><a href="{# {{ path('unicef42.temps_peri_controller_index') }} #}">{{actionsSolidaires.nom}}<br /></a></li>
+		<li><a href=" 
+		{{ path('u42p2.annees_actions_solidaires_index', {'actionSolidaire': actionsSolidaires.nom }) }}
+		">{{actionsSolidaires.nom}}<br /></a></li>
 	{% endfor %} 
 	<li><a href="{{ path('unicef42.manif_sportive_controller_index')}}">Manifestations sportive</a></li>
 	
