@@ -1,0 +1,11 @@
+<h1>{{secteur}}</h1>
+<ul>
+	{% for centre in liste %}
+		<li>
+			<a href="
+			{{
+				path('u42p2.annee_centres_sociaux_controller_index', {'secteur' : secteur ,'nom' : centre.nomStructure })
+			}}
+			">{{centre.nomStructure}}</a></li><br />
+	{% endfor %}
+</ul>
