@@ -58,6 +58,20 @@ function u42p2_theme() {
               'actionSolidaire' => NULL
               )
         ),
+        'centres-sociaux-secteur' => array(
+            'template' => 'centres-sociaux-secteur',
+            'variables' => array(
+              'liste' => NULL,
+              'secteur' => NULL
+              )
+        ),
+        'centres-sociaux-annee' => array(
+            'template' => 'centres-sociaux-annee',
+            'variables' => array(
+              'liste' => NULL,
+              'nom' => NULL
+              )
+        ),
 
     );
 	}

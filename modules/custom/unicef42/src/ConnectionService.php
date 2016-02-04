@@ -110,6 +110,19 @@ class ConnectionService implements ConnectionServiceInterface {
 		return $reponse;
 
 	}
+	public function listeCentresSociaux($secteur){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT `nomStructure` FROM `CategorieStructure`, `StructureEducative`,`Secteurs` WHERE idCatS = CategorieStructure_idCatS AND idSecteur=Secteurs_idSecteur AND nomCatS = "Centre Sociaux" AND nomSecteur = "'.$secteur.'" ');
+		return $reponse;
 
+	}
+	public function listeAnneeCentresSociaux($centresocial){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT AnneeCivil_Annee FROM Images, StructureEducative WHERE idStructure = StructureEducative_idStructure AND nomStructure = "'.$centresocial.'"');
+		return $reponse;
+
+	} 
 
 }

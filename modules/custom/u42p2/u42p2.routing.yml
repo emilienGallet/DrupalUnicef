@@ -38,3 +38,19 @@ u42p2.img_actions_solidaires_controller_index:
     _title: 'Img actions solidaires controller'
   requirements:
     _permission: 'access content'
+
+u42p2.liste_centres_sociaux_controller_index:
+  path: '/centres-sociaux/{secteur}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\ListeCentresSociauxController::index'
+    _title: 'Liste centres sociaux controller'
+  requirements:
+    _permission: 'access content'
+
+u42p2.annee_centres_sociaux_controller_index:
+  path: '/centres-sociaux/{secteur}/{nom}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\AnneeCentresSociauxController::index'
+    _title: 'Annee centres sociaux controller'
+  requirements:
+    _permission: 'access content'
