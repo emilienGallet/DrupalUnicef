@@ -54,3 +54,19 @@ u42p2.annee_centres_sociaux_controller_index:
     _title: 'Annee centres sociaux controller'
   requirements:
     _permission: 'access content'
+
+u42p2.liste_clubs_jeune_controller_index:
+  path: '/clubs-jeunes/{secteur}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\ListeClubsJeuneController::index'
+    _title: 'Liste clubs jeune controller'
+  requirements:
+    _permission: 'access content'
+
+u42p2.annee_clubs_jeune_controller_index:
+  path: '/clubs-jeunes/{secteur}/{nom}'
+  defaults:
+    _controller: '\Drupal\u42p2\Controller\AnneeClubsJeuneController::index'
+    _title: 'Annee clubs jeune controller'
+  requirements:
+    _permission: 'access content'

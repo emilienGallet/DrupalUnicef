@@ -1,0 +1,16 @@
+{
+  "name": "drupal/scotts_module",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/scotts_module",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/scotts_module",
+    "source": "http://cgit.drupalcode.org/scotts_module"
+  },
+  "require": { 
+      "twig/extensions": "~1.0"
+  }
+}

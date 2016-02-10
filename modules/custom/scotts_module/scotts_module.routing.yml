@@ -1,0 +1,8 @@
+
+scotts_module.default_controller_index:
+  path: '/scotts_module/index/hello/{name}'
+  defaults:
+    _controller: '\Drupal\scotts_module\Controller\DefaultController::index'
+    _title: 'Default controller'
+  requirements:
+    _permission: 'access content'

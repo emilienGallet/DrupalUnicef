@@ -1,0 +1,16 @@
+
+acme.default_controller_hello:
+  path: '/acme/hello/{name}'
+  defaults:
+    _controller: '\Drupal\acme\Controller\DefaultController::hello'
+    _title: 'Default controller'
+  requirements:
+    _permission: 'access content'
+
+acme.default_controller_index:
+  path: '/acme/index/hello/{name}'
+  defaults:
+    _controller: '\Drupal\acme\Controller\DefaultController::index'
+    _title: 'Default controller'
+  requirements:
+    _permission: 'access content'

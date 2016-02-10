@@ -1,0 +1,11 @@
+<h1>{{ nom }}</h1>
+<ul>
+	{% for leclub in liste %}
+		<li>
+			<a href="{#
+			{{
+				path('u42p2.annee_centres_sociaux_controller_index', {'secteur' : secteur ,'nom' : leclub.AnneeCivil_Annee })
+			}} #}
+			">{{leclub.AnneeCivil_Annee}}</a></li><br />
+	{% endfor %}
+</ul>

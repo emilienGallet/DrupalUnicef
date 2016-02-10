@@ -72,6 +72,20 @@ function u42p2_theme() {
               'nom' => NULL
               )
         ),
+        'clubs-jeunes-secteur' => array(
+            'template' => 'clubs-jeunes-secteur',
+            'variables' => array(
+              'liste' => NULL,
+              'secteur' => NULL
+              )
+        ),
+        'clubs-jeunes-annee' => array(
+            'template' => 'clubs-jeunes-annee',
+            'variables' => array(
+              'liste' => NULL,
+              'nom' => NULL
+              )
+        ),
 
     );
 	}

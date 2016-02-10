@@ -1,0 +1,12 @@
+name: unicef42
+type: theme
+description: emplacement du theme du site avec le module unicef42
+package: Other
+core: 8.x
+libraries:
+  - unicef42/global-styling
+
+base theme: bartik
+
+regions:
+  content: Content

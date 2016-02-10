@@ -1,10 +1,10 @@
 <ul>
 	{% for leSecteur in liste %}
 		<li>
-		<a href="{#
+		<a href="
 			{{ 
-				path('u42p2.liste_centres_sociaux_controller_index', {'secteur': leSecteur.nomSecteur }) 
-			}}#}
+				path('u42p2.liste_clubs_jeune_controller_index', {'secteur': leSecteur.nomSecteur }) 
+			}}
 		">{{leSecteur.nomSecteur}}<br /></a></li>
 	{% endfor %}
 </ul>

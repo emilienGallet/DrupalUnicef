@@ -1,0 +1,11 @@
+<h1>{{ secteur }}</h1>
+<ul>
+	{% for club in liste %}
+		<li>
+			<a href="
+			{{
+				path('u42p2.annee_clubs_jeune_controller_index', {'secteur' : secteur ,'nom' : club.nomEngagementJeune })
+			}}
+			">{{club.nomEngagementJeune}}</a></li><br />
+	{% endfor %}
+</ul>

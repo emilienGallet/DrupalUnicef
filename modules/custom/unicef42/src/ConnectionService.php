@@ -120,9 +120,23 @@ class ConnectionService implements ConnectionServiceInterface {
 	public function listeAnneeCentresSociaux($centresocial){
 		
 		$laBdd = $this->connection();
-		$reponse = $laBdd->query('SELECT AnneeCivil_Annee FROM Images, StructureEducative WHERE idStructure = StructureEducative_idStructure AND nomStructure = "'.$centresocial.'"');
+		$reponse = $laBdd->query('SELECT AnneeCivil_Annee FROM Images, StructureEducative WHERE idStructure = StructureEducative_idStructure AND nomStructure = "'.$centresocial.'" GROUP BY AnneeCivil_Annee');
 		return $reponse;
 
-	} 
+	}
+	public function listeClubsJeunes($secteur){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT nomEngagementJeune FROM CategorieEngagement, EngagementJeune, Secteurs WHERE idCatE = CategorieEngagement_idCatE AND idSecteur = Secteurs_idSecteur AND nomCatE = "Club Jeune" AND nomSecteur = "'.$secteur.'"');
+		return $reponse;
+
+	}
+	public function listeAnneeClubsJeunes($club){
+		
+		$laBdd = $this->connection();
+		$reponse = $laBdd->query('SELECT AnneeCivil_Annee FROM Images, EngagementJeune WHERE idEngagementJeune = EngagementJeune_idEngagementJeune AND nomEngagementJeune = "'.$club.'" GROUP BY AnneeCivil_Annee');
+		return $reponse;
+
+	}
 
 }

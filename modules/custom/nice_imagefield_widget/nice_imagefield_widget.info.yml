@@ -1,0 +1,11 @@
+name: Nice ImageField Widget
+type: module
+description: Creates a widget for imagefield to upload multiple files at once using html5 and display multiple images as draggable grid
+# core: 8.x
+package: Fields
+
+# Information added by Drupal.org packaging script on 2016-02-04
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'nice_imagefield_widget'
+datestamp: 1454598843
